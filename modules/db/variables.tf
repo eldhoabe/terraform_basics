@@ -8,7 +8,7 @@ variable "resourcegroup_location" {
 
 variable "teams" {
     type = string
-    default = "NeudesicTF"
+    default = "tf"
   
 }
 
