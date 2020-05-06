@@ -11,7 +11,7 @@ resource "azurerm_resource_group" "rg" {
     
     tags = {
         Environment = "Terraform Getting Started"
-        Team = "NeudesicTf"   
+        Team = Tf"   
     }
 }
 
@@ -37,7 +37,7 @@ resource "azurerm_app_service_plan" "example" {
   
   tags = {
         Environment = "Terraform Getting Started"
-        Team = "NeudesicTf"   
+        Team = "Tf"   
     }
   
 }
@@ -61,6 +61,7 @@ resource "azurerm_app_service" "example" {
   }
 }
 
+# To create sql database server, db and add firewall
 module "db" {
   source = "../modules/db"
   resourcegroup_name = azurerm_resource_group.rg.name
