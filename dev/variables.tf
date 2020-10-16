@@ -1,6 +1,6 @@
 variable "teams" {
     type = string
-    default = "NeudesicTF"
+    default = "TF"
   
 }
 
